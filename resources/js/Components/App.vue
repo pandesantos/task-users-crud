@@ -6,9 +6,6 @@ export default {
 
 <template>
   <v-container>
-    <RouterView/>
+    <router-view :key="$route.fullPath"></router-view>
   </v-container>
 </template>
-<!--<template v-slot:title>-->
-<!--  <span class="font-weight-black">Welcome to User Manager</span>-->
-<!--</template>-->

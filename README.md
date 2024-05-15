@@ -11,3 +11,8 @@
 6. Run `npm run dev` to run the frontend
 7. Since the Vue is combined with the laravel all the view part has 
 been rendered using vue js (Either laravel app url or frontend url should work)
+
+
+### Screenshots
+1. Users List
+![List of users](/public/screenshots/list.png)

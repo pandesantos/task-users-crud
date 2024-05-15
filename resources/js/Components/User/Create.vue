@@ -43,7 +43,7 @@ export default {
       e.preventDefault();
       this.isSubmitting = true;
       try {
-        await axios.post('/users', {
+        const response = await axios.post('/users', {
           name: this.name,
           email: this.email,
         }, {
