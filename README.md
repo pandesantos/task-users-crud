@@ -16,3 +16,8 @@ been rendered using vue js (Either laravel app url or frontend url should work)
 ### Screenshots
 1. Users List
 ![List of users](/public/screenshots/list.png)
+2. Create User
+![Create user](/public/screenshots/create.png)
+3. Create User
+![Edit user](/public/screenshots/edit.png)
+
