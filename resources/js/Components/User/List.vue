@@ -8,7 +8,6 @@ export default {
       users: [],
       loading: true,
       error: null,
-      openModal: false,
     };
   },
   methods: {
