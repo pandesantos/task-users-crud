@@ -18,6 +18,6 @@ been rendered using vue js (Either laravel app url or frontend url should work)
 ![List of users](/public/screenshots/list.png)
 2. Create User
 ![Create user](/public/screenshots/create.png)
-3. Create User
+3. Edit User
 ![Edit user](/public/screenshots/edit.png)
 
