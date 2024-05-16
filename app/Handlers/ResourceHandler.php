@@ -45,6 +45,13 @@ abstract class ResourceHandler
             ->json();
     }
 
+    protected function update(array $attributes, int $resourceId): array
+    {
+        return $this->http
+            ->put(url: $this->getFullPath($resourceId), data: $attributes)
+            ->json();
+    }
+
     protected function find(int $id): array
     {
         return $this->http->get(

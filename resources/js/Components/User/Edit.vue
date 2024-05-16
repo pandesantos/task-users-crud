@@ -30,6 +30,7 @@
 <script>
 export default {
   data: () => ({
+    id: 0,
     name: '',
     email:'',
     avatar:'',
@@ -50,7 +51,7 @@ export default {
       e.preventDefault();
       this.isSubmitting = true;
       try {
-        await axios.post('/users', {
+        await axios.put('/users/'+ this.id, {
           name: this.name,
           email: this.email,
         }, {
@@ -70,6 +71,7 @@ export default {
       this.isSubmitting = true;
       try {
         const response = await axios.get(`/users/${userId}`)
+        this.id = response.data.id;
         this.name = response.data.name;
         this.email = response.data.email;
         this.avatar = response.data.avatar;

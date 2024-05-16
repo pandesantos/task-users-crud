@@ -33,6 +33,11 @@ class UserService extends ResourceHandler
         return $this->find($id);
     }
 
+    public function updateUser(array $attributes, int $id): array
+    {
+        return $this->update($attributes, $id);
+    }
+
     public function getFullPath(int|string|null $resourceId = null): string
     {
         $baseUrl = $this->config->get('crud.users.base_url');

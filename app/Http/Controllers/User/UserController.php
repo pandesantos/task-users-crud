@@ -41,6 +41,13 @@ class UserController extends Controller
         return response()->json($user);
     }
 
+    public function update(StoreUserRequest $request, int $id): JsonResponse
+    {
+        $user = $this->userService->updateUser($request->validated(), $id);
+
+        return response()->json($user);
+    }
+
     public function destroy(int $id): JsonResponse
     {
         $user = $this->userService->deleteUser($id);
